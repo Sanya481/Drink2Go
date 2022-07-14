@@ -1,0 +1,62 @@
+/* ============== Filter__reset */
+
+.filter__reset {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 100%;
+  background-color: $base-white;
+  color: $base-primary;
+  border: none;
+  padding: 8px 35px;
+  margin-top: 6px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: color 0.3s ease-out, background-color 0.3s ease-in-out;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 40px auto 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.filter__reset:hover,
+.filter__reset:focus {
+  background-color: $primary-lighter;
+  color: $base-white;
+}
+
+.filter__reset:active {
+  background-color: $primary-darker;
+}
+
+.filter__reset:disabled {
+  background-color: $light-grey;
+  color: $base-white;
+  cursor: auto;
+}
+
+/* ========== Filter */
+
+@media (min-width: $tablet-width) {
+
+  .filter__title--price {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .filter__title--price {
+    margin-bottom: 30px;
+  }
+}
