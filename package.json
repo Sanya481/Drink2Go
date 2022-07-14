@@ -25,7 +25,8 @@
     "stylelint": "stylelint \"src/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gulp build && gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
@@ -45,5 +46,8 @@
   "engines": {
     "node": "16.13.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
