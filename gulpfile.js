@@ -39,7 +39,8 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-  return gulp.src('source/js/script.js')
+  // return gulp.src('source/js/script.js')
+  return gulp.src('source/js/**/*.js')
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
@@ -70,12 +71,13 @@ const createWebp = () => {
 // SVG
 
 const svg = () =>
-  gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+  gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
 const sprite = () => {
-  return gulp.src('source/img/icons/*.svg')
+  // return gulp.src('source/img/icons/*.svg')
+  return gulp.src('source/img/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
       inlineSvg: true

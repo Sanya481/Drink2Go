@@ -1,6 +1,7 @@
 /* ================ Map */
 
 .map__interactive {
+  position: relative;
   height: 420px;
 
   @media (min-width: $tablet-width) {
